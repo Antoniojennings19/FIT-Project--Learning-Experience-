@@ -1,0 +1,26 @@
+h1{
+    font-family: 'Sriracha', cursive;
+    color: #AA3D3D;
+}
+
+h3 {
+    font-family: 'Sriracha', cursive;
+    color: #AA3D3D;
+    float: left;
+    text-align: center;
+}
+
+h3:hover{
+    color: pink;
+    text-decoration: underline;
+}
+
+.btn-btn{
+    font-family: 'Sriracha', cursive;
+    color: white;
+    border: none;
+    background-color: #AA3D3D;
+    border-radius: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
