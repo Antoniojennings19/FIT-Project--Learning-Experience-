@@ -24,3 +24,11 @@ h3:hover{
     margin: 4px 2px;
     cursor: pointer;
 }
+
+p, li{
+    color: #AA3D3D;
+}
+
+ul.remove-style{
+    list-style-type: none;
+}
