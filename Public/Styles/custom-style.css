@@ -1,9 +1,26 @@
+html,
+body{
+    height: auto;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.web-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+.navbar-grid{
+    background-image: linear-gradient(#FFFFFF, #EED0E4);
+}
+
 h1{
     font-family: 'Sriracha', cursive;
     color: #AA3D3D;
 }
 
-h3 {
+h3{
     font-family: 'Sriracha', cursive;
     color: #AA3D3D;
     float: left;
@@ -31,4 +48,20 @@ p, li{
 
 ul.remove-style{
     list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-grid{
+    background-image: linear-gradient(#EED0E4, #FFFFFF);
 }
