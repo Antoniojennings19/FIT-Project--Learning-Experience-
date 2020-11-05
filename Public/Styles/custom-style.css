@@ -13,18 +13,50 @@ body{
 
 .navbar-grid{
     background-image: linear-gradient(#FFFFFF, #EED0E4);
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 354px 1fr 354px;
+    grid-template-rows: auto;
+    position: sticky;
+    top: 0;
+    
+}
+
+.navbar-left{
+    grid-column: 1;
+}
+
+.navbar-left > img{
+    height: auto;
+    width: 68px;
+    position: relative;
+    left: 310px;
+    bottom: 54px;
+    z-index: 1;
+}
+
+.navbar-menu{
+    grid-column: 2;
+    padding: 100px 20px 30px 25px;
+    margin: auto;
+}
+
+.navbar-menu > h3{
+    font-family: 'Sriracha', cursive;
+    color: #AA3D3D;
+    float: left;
+    padding: 5px 10px 5px 10px;
+
+}
+
+.bee-pic{
+    width: 200px;
+    height: auto;
 }
 
 h1{
     font-family: 'Sriracha', cursive;
     color: #AA3D3D;
-}
-
-h3{
-    font-family: 'Sriracha', cursive;
-    color: #AA3D3D;
-    float: left;
-    text-align: center;
 }
 
 h3:hover{
@@ -50,9 +82,20 @@ ul.remove-style{
     list-style-type: none;
 }
 
+.banner-pic{
+    width: 200px;
+    height: auto;
+}
 
+.welcome-pic{
+    width: 200px;
+    height: auto;
+}
 
-
+img.cloud-pic{
+    width: 340px;
+    height: auto;
+}
 
 
 
