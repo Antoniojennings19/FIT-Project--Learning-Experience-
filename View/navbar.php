@@ -9,10 +9,12 @@
 
             <!-- Navbar Menu -->
                 <div class='navbar-menu'>
-                    <h3>Math</h3>
-                    <h3>Language Arts</h3>
-                    <h3>Social Studies</h3>
-                    <h3>Science</h3>
+                <ul>
+                    <li class='remove'><a href="#">Math</a></li>
+                    <li class='remove'><a href="#">Language Arts</a></li>
+                    <li class='remove'><a href="#">Social Studies</a></li>
+                    <li class='remove'><a href="#">Science</a></li>
+                </ul>
                 </div>
             <!-- Navbar Menu -->
 

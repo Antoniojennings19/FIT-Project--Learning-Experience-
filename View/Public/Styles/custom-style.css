@@ -36,16 +36,11 @@ body{
 }
 
 .navbar-menu{
-    grid-column: 2;
-    padding: 100px 20px 30px 25px;
-    margin: auto;
-}
-
-.navbar-menu > h3{
     font-family: 'Sriracha', cursive;
     color: #AA3D3D;
-    float: left;
-    padding: 5px 10px 5px 10px;
+    text-align: center;
+    grid-column: 2;
+    padding: 35px 100px 2px 10px;
 
 }
 
@@ -78,9 +73,40 @@ p, li{
     color: #AA3D3D;
 }
 
-ul.remove-style{
+ul.remove-style, ul li.remove{
     list-style-type: none;
 }
+
+ul li.remove{
+    list-style-type: none;
+    display: inline;
+    font-size: 30px;
+    padding: 38px;
+}
+
+a:link {
+    color: #AA3D3D;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #AA3D3D;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #AA3D3D;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: pink;
+    background-color: transparent;
+    text-decoration: underline;
+  }
 
 .banner-pic{
     width: 200px;
