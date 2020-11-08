@@ -19,6 +19,20 @@
 <!-- meta tags -->
 
     <title>Document</title>
+    
+    <style>
+        
+        .remove-one-style > li, .remove-two-style > li {
+            line-height: 34.5px;
+        }
+
+        .info-one-grid > h2, .info-two-grid > h2 {
+            font-family: 'Sriracha', cursive;
+            color: #AA3D3D;
+        }
+
+    </style>
+
 </head>
 <body>
     

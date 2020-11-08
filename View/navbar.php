@@ -9,7 +9,7 @@
 
             <!-- Navbar Menu -->
                 <div class='navbar-menu'>
-                <ul>
+                <ul class=>
                     <li class='remove'><a href="#">Math</a></li>
                     <li class='remove'><a href="#">Language Arts</a></li>
                     <li class='remove'><a href="#">Social Studies</a></li>
@@ -20,7 +20,7 @@
 
             <!-- Navbar Right -->
                 <div class='navbar-right'>
-                    <button class='btn-btn btn btn-primary'>Sign up</button>
+                <a href='http://localhost/FIT-Project--Learning-Experience-/html/Signup.html'><button class='btn-btn btn btn-primary'>Sign up</button></a>
                     <button class='btn-btn btn btn-primary'>Try For Free</button>
                 </div>
             <!-- Navbar Right -->
