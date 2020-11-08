@@ -3,7 +3,7 @@
 <head>
 <!-- Links  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href='./View/Public/Styles/custom-style.css'>
+    <link rel="stylesheet" href='./View/Public/Styles/custom-styles.css'>
     <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
 <!-- Links -->
 
@@ -23,7 +23,7 @@
     <style>
         
         .remove-one-style > li, .remove-two-style > li {
-            line-height: 34.5px;
+            line-height: 34.5px; 
         }
 
         .info-one-grid > h2, .info-two-grid > h2 {

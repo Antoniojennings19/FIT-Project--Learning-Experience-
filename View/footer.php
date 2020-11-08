@@ -8,7 +8,7 @@
         <!-- Footer Left -->
 
         <!-- Footer Right -->
-            <div class='footer-left-grid'>
+            <div class='footer-right-grid'>
             
             </div>
         <!-- Footer Right -->

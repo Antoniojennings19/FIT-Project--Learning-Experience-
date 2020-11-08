@@ -2,7 +2,8 @@ html,
 body{
     height: auto;
     background-color: #ffffff;
-    margin: 0;
+    position: sticky;
+    top: 0;
 }
 
 .web-grid{
@@ -11,15 +12,16 @@ body{
     grid-template-rows: auto auto auto auto;
 }
 
+
+
+/* Navbar Styles */
+
 .navbar-grid{
     background-image: linear-gradient(#FFFFFF, #EED0E4);
     grid-row: 1;
     display: grid;
     grid-template-columns: 354px 1fr 354px;
     grid-template-rows: auto;
-    position: sticky;
-    top: 0;
-    
 }
 
 .navbar-left{
@@ -69,10 +71,6 @@ h3:hover{
     cursor: pointer;
 }
 
-.info-one-grid > p, .info-two-grid > p, li{
-    color: black;
-}
-
 li.remove{
     display: inline;
     font-size: 30px;
@@ -92,7 +90,6 @@ ul.remove-two-style{
 ul.remove-one-style, ul.remove-two-style, li.remove{
     list-style-type: none;
 }
-
 
 
 a:link {
@@ -123,9 +120,18 @@ a:active {
     margin: auto;
 }
 
+
+
+/* Index Styles */
+
+.intro-grid {
+    border-bottom: 1px solid black;
+    display: grid;
+}
+
 .banner-pic{
     width: 100%;
-    height: 373px;
+    height: 465px;
 }
 
 .information-grid{
@@ -159,6 +165,10 @@ a:active {
     border-width: 7px;
 }
 
+.info-one-grid > p, .info-two-grid > p, li{
+    color: black;
+}
+
 .info-one-grid > p, .info-two-grid > p {
     text-align: center;
     border-bottom: 1px solid gray;
@@ -177,24 +187,41 @@ a:active {
 
 
 
-.welcome-pic{
-    width: 200px;
-    height: auto;
-}
+/* Footer Styles */
 
-img.cloud-pic{
-    width: 340px;
-    height: auto;
-}
-
-
-
-
-
-
-
-
-.footer-grid{
+.footer-grid {
+    display: grid;
+    grid-template-columns: auto;
     background-image: linear-gradient(#EED0E4, #FFFFFF);
-    margin-top: 110px;
+
+    margin-top: 80px;
+    border-top: 1px solid black;
+  }
+  
+.footer-left-grid{
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
 }
+
+.footer-left-grid > img.welcome-pic{
+    grid-column: 1;
+    grid-row: 1;
+    width: 330px;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    bottom: 2px;
+    left: 38px;
+}
+
+.footer-left-grid > img.cloud-pic{
+    position: relative;
+    grid-row: 1;
+    z-index: 0;
+    position: relative;
+    top: -2px;
+    width: 436px;
+    height: auto;
+}
+
