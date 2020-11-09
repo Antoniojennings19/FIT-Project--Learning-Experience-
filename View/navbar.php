@@ -2,7 +2,7 @@
 <div class='navbar-grid'>
             <!-- Navbar Left -->
                 <div class='navbar-left'>
-                    <h1>Learning Experience</h1>
+                    <a href='./index.php' style='text-decoration: none;'><h1>Learning Experience</h1></a>
                     <img class='bee-pic' src='./View/Public/Images/bee.png'>   
                 </div>
             <!-- Navbar Left -->
@@ -20,8 +20,8 @@
 
             <!-- Navbar Right -->
                 <div class='navbar-right'>
-                <a href='http://localhost/FIT-Project--Learning-Experience-/html/Signup.html'><button class='btn-btn btn btn-primary'>Sign up</button></a>
-                    <button class='btn-btn btn btn-primary'>Try For Free</button>
+                <a href='./signup.php'><button class='btn-btn btn btn-primary'>Sign up</button></a>
+                    <button class='btn-btn btn btn-primary'>Log In</button>
                 </div>
             <!-- Navbar Right -->
         </div>
