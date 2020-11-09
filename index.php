@@ -14,6 +14,7 @@
         <p>Allow your kids to explore and learn new things!</p>
         <!-- Info 1 -->
             <div class='info-one-grid'>
+                <!-- Inline Styles -->
                 <h2 style='text-align: center; font-size: 30px'>Pre-K</h2>
                 <p>Counting numbers, rhyming words,
                     learning letters, and more!</p>

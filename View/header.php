@@ -20,6 +20,7 @@
 
     <title>Document</title>
     
+    <!-- Internal Styles -->
     <style>
         
         .remove-one-style > li, .remove-two-style > li {

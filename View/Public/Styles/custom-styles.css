@@ -141,6 +141,12 @@ a:active {
     grid-template-rows: auto;
 }
 
+.information-grid > p{
+    color: #AA3D3D;
+    font-size: 34px;
+    margin: 56px;
+}
+
 .information-grid > h2 {
     grid-column: 1;
     margin: auto;
@@ -171,7 +177,7 @@ a:active {
 
 .info-one-grid > p, .info-two-grid > p {
     text-align: center;
-    border-bottom: 1px solid gray;
+    border-bottom: 3px solid #F98FBD;
     margin-top: 10px;
 }
 
@@ -193,8 +199,7 @@ a:active {
     display: grid;
     grid-template-columns: auto;
     background-image: linear-gradient(#EED0E4, #FFFFFF);
-
-    margin-top: 80px;
+    margin-top: 203px;
     border-top: 1px solid black;
   }
   
