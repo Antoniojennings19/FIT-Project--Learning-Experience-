@@ -20,8 +20,13 @@ body{
     background-image: linear-gradient(#FFFFFF, #EED0E4);
     grid-row: 1;
     display: grid;
-    grid-template-columns: 354px 1fr 354px;
+    grid-template-columns: 410px 1fr 275px;
     grid-template-rows: auto;
+}
+
+.navbar-right {
+    grid-column: 3;
+    margin: 30px 75px 25px;
 }
 
 .navbar-left{
@@ -69,6 +74,12 @@ h3:hover{
     border-radius: 18px;
     margin: 4px 2px;
     cursor: pointer;
+}
+
+.teacher-btn, .student-btn{
+    background-color: white;
+    color: black;
+    
 }
 
 li.remove{
@@ -269,4 +280,12 @@ a:active {
     display: grid;
     grid-column: 3;
     grid-row: 0;
+}
+
+/* Login Styles */
+.login-form-grid {
+    display: grid;
+    grid-template-columns: 70%;
+    margin-left: 825px;
+    padding-top: 40px;
 }
