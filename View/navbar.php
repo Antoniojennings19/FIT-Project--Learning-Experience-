@@ -41,9 +41,8 @@
 
     <!-- Navbar Right -->
         <div class='navbar-right'>
-        
-        <button class='btn-btn btn btn-primary' data-toggle="modal" data-target="#myModal">Sign up</button>
-            <button class='btn-btn btn btn-primary'>Log In</button>
+            <button class='btn-btn btn btn-primary' data-toggle="modal" data-target="#myModal">Sign up</button>
+            <a href='./login.php'><button class='btn-btn btn btn-primary'>Log In</button></a>
         </div>
     <!-- Navbar Right -->
 </div>
