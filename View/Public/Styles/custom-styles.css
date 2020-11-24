@@ -145,14 +145,14 @@ a:active {
     height: 465px;
 }
 
-.information-grid{
+.information-grid {
     display: grid;
     grid-template-columns: 60% 355px 355px;
     -ms-grid-rows: auto;
     grid-template-rows: auto;
 }
 
-.information-grid > p{
+.information-grid > p {
     color: #AA3D3D;
     font-size: 34px;
     margin: 56px;
@@ -210,7 +210,7 @@ a:active {
     display: grid;
     grid-template-columns: auto;
     background-image: linear-gradient(#EED0E4, #FFFFFF);
-    margin-top: 203px;
+    margin-top: 25px;
     border-top: 1px solid black;
   }
   
@@ -276,7 +276,7 @@ a:active {
     bottom: 50px;
 }
 
-.footer-right-button-grid{
+.footer-right-button-grid {
     display: grid;
     grid-column: 3;
     grid-row: 0;
@@ -288,4 +288,26 @@ a:active {
     grid-template-columns: 70%;
     margin-left: 825px;
     padding-top: 40px;
+}
+
+.student-card-grid {
+    margin: 30px 700px 30px 700px;
+    /* margin: 30px 500px 30px 500px; */
+}
+
+table {
+    width: 85%;
+}
+
+table, th, tr {
+    border: 1px solid black;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: pink;
 }
