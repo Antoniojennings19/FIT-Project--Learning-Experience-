@@ -17,7 +17,7 @@
          
         //Inserting new users
         $query = "INSERT INTO Students
-                    (StudentFirst, StudentLast, GradeLevel, Email, StudentPhone, StudentPassword)
+                    (StudentFirst, StudentLast, GradeLevel, StudentEmail, StudentPhone, StudentPassword)
                 VALUES('$studFirst', '$studLast', '$studGrade', '$studEmail', '$studPhone', '$studPass');
         ";
 
@@ -26,6 +26,24 @@
 
         //Execute Query
         $stmt->execute();
+    }
+
+    function checkStudent($studEmail, $studPassword){
+        
+        $query = "SELECT StudentEmail, StudentPassword
+        FROM Students 
+        WHERE StudentEmail = '$studEmail' AND StudentPassword = '$studPassword'";
+
+        $stmt = $this->conn->prepare($query);
+        $stmt->execute();
+
+        if($stmt->rowCount() <= 0){
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
 }
 ?>

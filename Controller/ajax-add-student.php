@@ -3,7 +3,6 @@
     //Include Database
     include './db-conn.php';
     include './student-cards.php';
-    include '../Model/query-courses.php';
     include '../Model/query-student.php';
 
     $stuPOST = filter_var_array($_POST, FILTER_SANITIZE_STRING);

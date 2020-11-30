@@ -17,5 +17,20 @@
         });
     }
 
+    function ajaxLog(logEmail, logPass)
+    {
+        //Ajax Function
+        $.ajax({
+            type: "POST",
+            url: "./Controller/ajax-add-login.php",
+            data: "logEmail="+ logEmail + "&logPass=" + logPass,
+            success: function(data){
+                $("#login-msg").html(data);
+            },
+            error: function(data){
+                alert('An error occured while trying to log in, please try again!');
+            },
+        });
+    }
 
 </script>

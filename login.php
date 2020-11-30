@@ -1,6 +1,7 @@
 <?php
     include './View/header.php';
     include './View/navbar.php';
+    include './Controller/ajax-calls.php';
 ?>
 
 <!-- Introduction -->
@@ -12,16 +13,15 @@
 <!-- Form -->
     <!-- Login Form -->
         <div class='login-form-grid'>
-            <form action="#" method="post">
                 <div class="log-form">
                     <div class="user">
-                        <label for="uname"><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" name="user" required>
+                        <label for="uname"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" id="user" required>
                     </div>
 
                     <div class="pass">
                         <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="pass" required>
+                        <input type="password" placeholder="Enter Password" id="pass" required>
                     </div>
 
                     <div class="log">
@@ -29,14 +29,18 @@
                             <input type="checkbox" checked="checked" name="remember"> Remember me
                         </label>
 
-                        <button type="submit" name='login-submit'>Login</button>
+                        <button type="submit" name='login-submit' onclick="ajaxLog(document.getElementById('user').value,
+                                                                                   document.getElementById('pass').value)">Login</button>
                     </div>
                 </div>
 
                 <div class="forgot-password">
                     <span class="psw"><a href="#">Forgot password?</a></span>
                 </div>
-            </form>
+
+                <div id="login-msg">
+                
+              </div>
         </div>
     <!-- Login Form -->
 <!-- Form -->

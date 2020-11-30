@@ -1,16 +1,16 @@
 <?php
-class courseName {
+class login {
     public function __construct($db){
         $this->conn = $db;
     }
 
-    function courseRead(){
+    function loginRead(){
 
         //Selects all courses
-        $query = "SELECT  S.StudentFirst, S.StudentLast, S.GradeLevel, C.CourseName 
-        FROM Classes AS C 
+        $query = "SELECT S.StudentEmail, S.StudentPassword, T.StaffEmail, T.StaffPassword 
+        FROM StaffMemebrs AS T 
         INNER JOIN Students AS S 
-        ON C.StudentID = S.StudentID";
+        ON T.StaffID = S.StudentID";
 
         //Prepare query statement
         $stmt = $this->conn->prepare($query);
@@ -22,5 +22,3 @@ class courseName {
         return $stmt;
     }
 }
-
-?>
