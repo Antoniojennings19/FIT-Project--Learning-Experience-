@@ -2,7 +2,7 @@
 <div class='navbar-grid'>
             <!-- Navbar Left -->
                 <div class='navbar-left'>
-                    <a href='./index.php' style='text-decoration: none;'><h1>Learning Experience</h1></a>
+                    <a href='./index.php' style='text-decoration: none;'><h1 style='font-size: 40px;'>Learning Experience</h1></a>
                     <img class='bee-pic' src='./View/Public/Images/bee.png'>   
                 </div>
             <!-- Navbar Left -->

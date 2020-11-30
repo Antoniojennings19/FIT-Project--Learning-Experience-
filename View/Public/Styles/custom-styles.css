@@ -46,6 +46,10 @@ body{
 
 }
 
+.navbar-right {
+    margin: auto;
+}
+
 .bee-pic{
     width: 200px;
     height: auto;
@@ -111,9 +115,7 @@ a:active {
     text-decoration: underline;
 }
 
-.navbar-right {
-    margin: auto;
-}
+
 
 
 
@@ -266,12 +268,92 @@ a:active {
     grid-row: 0;
 }
 
-@media only screen and (max-width: 1722px){
+@media only screen and (max-width: 1721px){
+
+    .navbar-grid{
+        background-image: linear-gradient(#FFFFFF, #EED0E4);
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 354px 1fr 170px;
+        grid-template-rows: auto;
+    }
+
     .navbar-menu{
         font-family: 'Sriracha', cursive;
         color: #AA3D3D;
         text-align: center;
         grid-column: 2;
-        padding: 0px 0px 2px 0px;
+        padding: 40px 0px 1px 5px;
+    }
+
+    .banner-pic{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1433px){
+    li.remove{
+        display: inline;
+        font-size: 30px;
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 1577px){
+    .info-one-grid{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .info-two-grid{
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
+
+@media only screen and (max-width: 1248px){
+    li.remove{
+        display: inline;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 1159px){
+    .navbar-grid{
+        background-image: linear-gradient(#FFFFFF, #EED0E4);
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 1fr 200px;
+        grid-template-rows: auto;
+    }
+    
+    .navbar-left{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    .navbar-left > img{
+        height: auto;
+        width: 68px;
+        position: relative;
+        left: 310px;
+        bottom: 54px;
+        z-index: 1;
+    }
+    
+    .navbar-menu{
+        font-family: 'Sriracha', cursive;
+        color: #AA3D3D;
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    li.remove{
+        font-size: 25px;
+    }
+
+    .navbar-right{
+        grid-column: 2;
+        grid-row:1
     }
 }
