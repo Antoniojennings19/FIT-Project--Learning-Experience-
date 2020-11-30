@@ -1,9 +1,9 @@
 html,
 body{
     height: auto;
+    margin: auto;
     background-color: #ffffff;
     position: sticky;
-    top: 0;
 }
 
 .web-grid{
@@ -333,7 +333,7 @@ tr:nth-child(odd) {
 
     .banner-pic{
         display: none;
-    }
+    }     
 }
 
 @media only screen and (max-width: 1433px){

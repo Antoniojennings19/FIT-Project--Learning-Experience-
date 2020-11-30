@@ -75,12 +75,12 @@
             </div>
             <div class="form-group">        
               <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default" name='signup-submit'onclick="ajaxCard(document.getElementById('fname').value, 
+                <a href="#"><button type="submit" class="btn btn-default" name='signup-submit'onclick="ajaxCard(document.getElementById('fname').value, 
                                                                                                document.getElementById('lname').value,
                                                                                                document.querySelector('#grade').value,
                                                                                                document.getElementById('email').value,
                                                                                                document.getElementById('phone').value, 
-                                                                                               document.getElementById('pwd').value)">Submit</button>
+                                                                                               document.getElementById('pwd').value)">Submit</button></a>
               </div>
 
               <div id="response-msg">
