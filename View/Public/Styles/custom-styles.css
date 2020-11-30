@@ -77,15 +77,10 @@ li.remove{
     padding: 38px;
 }
 
-ul.remove-one-style{
+ul.remove-one-style, ul.remove-two-style{
     padding: 10px;
     margin-top: -15px;
 }
-
-ul.remove-two-style{
-    padding: 10px;
-    margin-top: -15px;
-} 
 
 ul.remove-one-style, ul.remove-two-style, li.remove{
     list-style-type: none;
@@ -269,4 +264,14 @@ a:active {
     display: grid;
     grid-column: 3;
     grid-row: 0;
+}
+
+@media only screen and (max-width: 1722px){
+    .navbar-menu{
+        font-family: 'Sriracha', cursive;
+        color: #AA3D3D;
+        text-align: center;
+        grid-column: 2;
+        padding: 0px 0px 2px 0px;
+    }
 }
