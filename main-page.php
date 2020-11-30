@@ -11,26 +11,26 @@
         $database = new Database();
         $db = $database->connect();
 
-        //Initialize Objects 
-        $product = new courseName($db);
-
-        //Read all courses, students, & grade in the database
-        $productGet = $product->courseRead();
+        //Initialize objects & reads all courses, students, & grade in the database
+        $course = new courseName($db);
+        $informationGet = $course->courseRead();
+    
     //DB Connection
 
 ?>
 
-    <div class='student-course-grid'>
+    <div class='student-course-grid' id='create-student'>
         <?php 
             $rowNum = 1;
 
-            while ($row = $productGet->fetch(PDO::FETCH_ASSOC)){
+            while ($row = $informationGet->fetch(PDO::FETCH_ASSOC)){
                 // Variables
                 $stuCourse = $row['CourseName'];
-                $stuName = $row['StudentName'];
+                $stuFirst = $row['StudentFirst'];
+                $stuLast = $row['StudentLast'];
                 $stuGrade = $row['GradeLevel'];
 
-                makeStudentCard($stuCourse, $stuName, $stuGrade, $rowNum);
+                makeStudentCard($stuCourse, $stuFirst, $stuLast, $stuGrade, $rowNum);
                 $rowNum++;
             }
 

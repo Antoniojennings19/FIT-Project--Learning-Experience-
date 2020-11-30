@@ -7,17 +7,18 @@
 
     function addStudent($data){
         //Variables
-        $studentName = $data['name'];
-        $student = $data['slices'];
-        $personComment = $data['comments'];
 
-        $fullName = $sahfjk . " " . $sdjkjdsf;
-    
-
+        $studFirst = $data['first'];
+        $studLast = $data['last'];
+        $studGrade = $data['grade'];
+        $studEmail = $data['email'];
+        $studPhone = $data['phone'];
+        $studPass = $data['pwd'];
+         
         //Inserting new users
         $query = "INSERT INTO Students
-                    (name, comments)
-                VALUES('$fullName', '$personComment');
+                    (StudentFirst, StudentLast, GradeLevel, Email, StudentPhone, StudentPassword)
+                VALUES('$studFirst', '$studLast', '$studGrade', '$studEmail', '$studPhone', '$studPass');
         ";
 
         //Prepare Query Statement

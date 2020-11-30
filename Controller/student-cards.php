@@ -1,5 +1,5 @@
 <?php
-    function makeStudentCard($stuCourse, $stuName, $stuGrade, $rowNum){
+    function makeStudentCard($stuCourse, $stuFirst, $stuLast, $stuGrade, $rowNum){
         echo "
         <div class='student-card-grid' style='grid-column: 1/5; grid-row: {$rowNum}; text-align: center;'>
             <table>
@@ -12,7 +12,7 @@
                 </tr>
                 <tr>
                     <th>Student Name</th>  
-                    <td>{$stuName}</td>      
+                    <td>{$stuFirst} {$stuLast}</td>      
                 </tr>  
                 <tr>
                     <th>Grade</th>

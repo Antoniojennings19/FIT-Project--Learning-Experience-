@@ -56,6 +56,7 @@
             </div>
         <!-- Footer Right -->
     </div>
+
 </div>
 <!-- Footer -->
 </body>

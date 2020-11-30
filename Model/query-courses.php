@@ -7,7 +7,7 @@ class courseName {
     function courseRead(){
 
         //Selects all courses
-        $query = "SELECT  S.StudentName, S.GradeLevel, C.CourseName 
+        $query = "SELECT  S.StudentFirst, S.StudentLast, S.GradeLevel, C.CourseName 
         FROM Classes AS C 
         INNER JOIN Students AS S 
         ON C.StudentID = S.StudentID";
