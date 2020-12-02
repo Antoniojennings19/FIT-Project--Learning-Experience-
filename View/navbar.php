@@ -2,19 +2,23 @@
 <div class='navbar-grid'>
     <!-- Navbar Left -->
         <div class='navbar-left'>
-            <a href='./index.php' style='text-decoration: none;'><h1>Learning Experience</h1></a>
-            <img class='bee-pic' src='./View/Public/Images/bee.png'>   
+            <a href='./index.php' style='text-decoration: none;'><h1 class='title'>Learning Experience</h1></a>
+            <img class='bee-pic' src='./View/Public/Images/bee.png'>
+            <select name='course' id='courses'>
+                <option value='Math'>Math</option>
+                <option value='Math'>Language Arts</option>
+                <option value='Math'>Social Studies</option>
+                <option value='Math'>Science</option>
+            </select>
         </div>
     <!-- Navbar Left -->
 
     <!-- Navbar Menu -->
         <div class='navbar-menu'>
-        <ul class=>
-            <li class='remove'><a href="#">Math</a></li>
-            <li class='remove'><a href="#">Language Arts</a></li>
-            <li class='remove'><a href="#">Social Studies</a></li>
-            <li class='remove'><a href="#">Science</a></li>
-        </ul>
+            <a class='remove' href="#">Math</a>
+            <a class='remove' href="#">Language Arts</a>
+            <a class='remove' href="#">Social Studies</a>
+            <a class='remove' href="#">Science</a>
         </div>
     <!-- Navbar Menu -->
     
