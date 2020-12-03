@@ -4,12 +4,6 @@
         <div class='navbar-left'>
             <a href='./index.php' style='text-decoration: none;'><h1 class='title'>Learning Experience</h1></a>
             <img class='bee-pic' src='./View/Public/Images/bee.png'>
-            <select name='course' id='courses'>
-                <option value='Math'>Math</option>
-                <option value='Math'>Language Arts</option>
-                <option value='Math'>Social Studies</option>
-                <option value='Math'>Science</option>
-            </select>
         </div>
     <!-- Navbar Left -->
 
@@ -19,6 +13,19 @@
             <a class='remove' href="#">Language Arts</a>
             <a class='remove' href="#">Social Studies</a>
             <a class='remove' href="#">Science</a>
+        </div>
+
+        <div class="container">                                     
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Home
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Math</a></li>
+                    <li><a href="#">Language Arts</a></li>
+                    <li><a href="#">Social Studies</a></li>
+                    <li><a href="#">Science</a></li>
+                </ul>
+            </div>
         </div>
     <!-- Navbar Menu -->
     
