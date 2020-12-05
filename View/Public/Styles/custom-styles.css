@@ -429,5 +429,40 @@ tr:nth-child(odd) {
 }
 
 @media only screen and (max-width: 560px){
+    .info-one-grid{
+        grid-column: 1;
+        grid-row: 2;
+    }
 
+    .info-two-grid{
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
+
+@media only screen and (max-width: 560px){
+    .navbar-left{
+        display: none;
+    }
+
+    .dropdown-toggle {
+        margin-bottom: 12px;
+    }
+
+    .navbar-grid{
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto;
+    }
+
+    .navbar-right{
+        grid-column: 1;
+    }
+
+    .welcome-pic{
+        margin-left: -43px;
+    }
+
+    .information-grid > p{
+        margin-right: 103px;
+    }
 }
