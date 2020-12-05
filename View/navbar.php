@@ -2,19 +2,30 @@
 <div class='navbar-grid'>
     <!-- Navbar Left -->
         <div class='navbar-left'>
-            <a href='./index.php' style='text-decoration: none;'><h1>Learning Experience</h1></a>
-            <img class='bee-pic' src='./View/Public/Images/bee.png'>   
+            <a href='./index.php' style='text-decoration: none;'><h1 class='title'>Learning Experience</h1></a>
+            <img class='bee-pic' src='./View/Public/Images/bee.png'>
         </div>
     <!-- Navbar Left -->
 
     <!-- Navbar Menu -->
         <div class='navbar-menu'>
-        <ul class=>
-            <li class='remove'><a href="#">Math</a></li>
-            <li class='remove'><a href="#">Language Arts</a></li>
-            <li class='remove'><a href="#">Social Studies</a></li>
-            <li class='remove'><a href="#">Science</a></li>
-        </ul>
+            <a class='remove' href="#">Math</a>
+            <a class='remove' href="#">Language Arts</a>
+            <a class='remove' href="#">Social Studies</a>
+            <a class='remove' href="#">Science</a>
+        </div>
+
+        <div class="container">                                     
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Home
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Math</a></li>
+                    <li><a href="#">Language Arts</a></li>
+                    <li><a href="#">Social Studies</a></li>
+                    <li><a href="#">Science</a></li>
+                </ul>
+            </div>
         </div>
     <!-- Navbar Menu -->
     

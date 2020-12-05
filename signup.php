@@ -1,6 +1,7 @@
 <?php
     include './View/header.php';
     include './View/navbar.php';
+    include './Controller/ajax-calls.php';
 ?>
 
 <!-- Introduction -->
@@ -12,55 +13,55 @@
 <!-- Form -->
     <div class='form-grid'>
         <!-- Signup Form -->
-        <form class="form-horizontal" action="">
             <div class="form-group">
                 <label class="control-label col-sm-2" for="fname">First Name:</label>
                 <div class="col-sm-10">          
-                  <input type="firstname" class="form-control" id="fname" placeholder="First Name" name="fname">
+                  <input type="firstname" class="form-control" id="fname" placeholder="First Name" name="fname" required>
                 </div>
               </div>
               <div class="form-group">
                 <label class="control-label col-sm-2" for="lname">Last Name:</label>
                 <div class="col-sm-10">          
-                  <input type="lastname" class="form-control" id="lname" placeholder="Last Name" name="lname">
+                  <input type="lastname" class="form-control" id="lname" placeholder="Last Name" name="lname" required>
                 </div>
               </div>
               <div class="form-group">
                 <label class="control-label col-sm-2" for="grade">Grade</label>
                 <div class="col-sm-10">          
-                  <select class="form-control" id="grade" placeholder="Grade" name="grade">
-                    <option value="pre-k">Pre-K</option>
-                    <option value="first grade">1</option>
-                    <option value="second grade">2</option>
-                    <option value="third grade">3</option>
-                    <option value="fourth grade">4</option>
-                    <option value="fifth grade">5</option>
-                    <option value="sixth grade">6</option>
-                    <option value="seventh grade">7</option>
-                    <option value="eighth grade">8</option>
-                    <option value="nineth grade">9</option>
-                    <option value="tenth grade">10</option>
-                    <option value="eleventh grade">11</option>
-                    <option value="twelfth grade">12</option>
+                  <select class="form-control" id="grade" placeholder="Grade" name="grade" required>
+                    <option style="display: none;" value="">Please Select</option>
+                    <option class="grade" value="Pre-K">Pre-K</option>
+                    <option class="grade" value="First Grade">1</option>
+                    <option class="grade" value="Second Grade">2</option>
+                    <option class="grade" value="Third Grade">3</option>
+                    <option class="grade" value="Fourth Grade">4</option>
+                    <option class="grade" value="Fifth Grade">5</option>
+                    <option class="grade" value="Sixth Grade">6</option>
+                    <option class="grade" value="Seventh Grade">7</option>
+                    <option class="grade" value="Eighth Grade">8</option>
+                    <option class="grade" value="Nineth Grade">9</option>
+                    <option class="grade" value="Tenth Grade">10</option>
+                    <option class="grade" value="Eleventh Grade">11</option>
+                    <option class="grade" value="Twelfth Grade">12</option>
                 </select>
                 </div>
               </div>
             <div class="form-group">
               <label class="control-label col-sm-2" for="email">Email:</label>
               <div class="col-sm-10">
-                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
               </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-sm-2" for="phone">Phone Number:</label>
                 <div class="col-sm-10">          
-                  <input type="phonenumber" class="form-control" id="phone" placeholder="Phone Number" name="phone">
+                  <input type="phonenumber" class="form-control" id="phone" placeholder="Phone Number" name="phone" required>
                 </div>
               </div>
             <div class="form-group">
               <label class="control-label col-sm-2" for="pwd">Password:</label>
               <div class="col-sm-10">          
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required>
               </div>
             </div>
             <div class="form-group">        
@@ -74,10 +75,18 @@
             </div>
             <div class="form-group">        
               <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="submit" class="btn btn-default" name='signup-submit'onclick="ajaxCard(document.getElementById('fname').value, 
+                                                                                               document.getElementById('lname').value,
+                                                                                               document.querySelector('#grade').value,
+                                                                                               document.getElementById('email').value,
+                                                                                               document.getElementById('phone').value, 
+                                                                                               document.getElementById('pwd').value)">Submit</button>
+              </div>
+
+              <div id="response-msg">
+                
               </div>
             </div>
-        </form>
         <!-- Signup Form -->
     </div>
 <!-- Form -->
